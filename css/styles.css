@@ -1,0 +1,129 @@
+:root{
+--prime-color: #145672;
+--second-color: #DDF4FF;
+--text: #000000;
+--white: #FFFFFF; 
+
+}
+body {
+font-family: 'League Spartan';
+
+}
+
+.container{
+    padding:0 10px;
+margin: 0 auto;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.logo{
+    width:200px;
+    height: 85px;
+    padding-left: 45px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    display: flex;
+    
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header{
+    height: 115px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    background-color: var(--second-color)
+}
+.header-box{
+    margin-left: 122px;
+    font-weight: 500;
+    justify-content: center;
+    color: var(--prime-color);
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.header-box-list{
+    margin-right: 60px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+.header-btn{
+    margin-left: 35px;
+    background-color: var(--second-color);
+    color: var(--prime-color);
+    width: 105px;
+    height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 4px;
+    border-color: var(--white);
+}
+.header-btn:hover,
+.header-btn:focus{
+    background-color: var(--prime-color);
+    color: var(--white);
+
+}
+.header-text{
+    list-style: none;
+    text-decoration: none;
+    color: var(--prime-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1.5;
+}
+/* about */
+.about{
+    width: 100%;
+    padding-top: 65px;
+    padding-left: 70px;
+    height: 700px;
+    background-image: url(../img/hero.jpg);
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about-section{
+    
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 108px;
+    color: var(--prime-color);
+}
+.about-btn{
+    margin-left: 55px;
+    background-color: var(--prime-color);
+    color: var(--second-color);
+    width: 305px;
+    height: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 4px;
+    border: none;
+}
+.about-text{
+    width: 305px;
+    font-weight: 600;
+    margin-left: 55px;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+}
