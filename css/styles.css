@@ -35,43 +35,41 @@ li{
     background-repeat: no-repeat;
 }
 .header{
-    height: 115px;
+    height: 85px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
+    justify-content: space-between;
     background-color: var(--second-color)
 }
 .header-box{
-    margin-left: 122px;
-    font-weight: 500;
-    justify-content: center;
     color: var(--prime-color);
-    font-size: 18px;
     display: flex;
     flex-wrap: wrap;
 
 }
 .header-box-list{
-    margin-right: 60px;
+    margin-right: 80px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 35px;
     line-height: 1.5;
     
 }
 .header-btn{
-    margin-left: 35px;
+    margin-right: 80px;
     background-color: var(--second-color);
     color: var(--prime-color);
     width: 105px;
-    height: 30px;
+    height: 40px;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
     border-radius: 4px;
     border-color: var(--white);
+    justify-content: center;
+    align-items: center;
 }
 .header-btn:hover,
 .header-btn:focus{
@@ -85,29 +83,28 @@ li{
     color: var(--prime-color);
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 24px;
     line-height: 1.5;
 }
 /* about */
 .about{
     width: 100%;
+    margin: 0 auto;
     padding-top: 65px;
     padding-left: 70px;
     height: 700px;
     background-image: url(../img/hero.jpg);
     /* background-size: contain; */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .about-section{
-    
-    font-weight: 600;
-    font-size: 100px;
+    font-size: 80px;
     line-height: 108px;
     color: var(--prime-color);
 }
 .about-btn{
-    margin-left: 55px;
     background-color: var(--prime-color);
     color: var(--second-color);
     width: 305px;
@@ -122,8 +119,8 @@ li{
 .about-text{
     width: 305px;
     font-weight: 600;
-    margin-left: 55px;
-    font-size: 30px;
+    
+    font-size: 40px;
     line-height: 1.5;
     text-align: center;
 }
