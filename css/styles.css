@@ -20,6 +20,9 @@ li{
     list-style: none;
 
 }
+h2{
+    margin: 0;
+}
 
 .logo{
     width:200px;
@@ -94,7 +97,7 @@ li{
     padding-left: 70px;
     height: 700px;
     background-image: url(../img/hero.jpg);
-    /* background-size: contain; */
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -123,4 +126,45 @@ li{
     font-size: 40px;
     line-height: 1.5;
     text-align: center;
+}
+/*  features  */
+
+.features{
+
+    height: 800px;
+
+    border-left: 0px solid transparent;
+    border-right: 100px solid transparent;
+    background-image: url(/img/about.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--second-color);
+}
+
+.features-section{
+padding-top: 200px;
+padding-left: 800px;
+padding-right: 80px;
+font-size: 40px;
+line-height: 1.5;
+text-align: center;
+color: var(--prime-color);
+
+}
+.features-list{
+padding-left: 800px;
+padding-right: 80px;
+font-size: 35px;
+line-height: 1.5;
+text-align: center;
+color: var(--text);
+}
+.features-text{
+padding-left: 800px;
+padding-right: 80px;
+font-size: 25px;
+line-height: 1.0;
+text-align: center;
+color: var(--text);
 }
