@@ -154,7 +154,7 @@ font-size: 30px;
 /*  about  */
 
 .about{
-    height: 800px;
+    height: 900px;
     padding-top: 200px;
     padding-left: 900px;
     padding-right: 90px;
@@ -230,7 +230,7 @@ font-size: 30px;
 .price-text-cost{
     width: 200px;
     display: flex;
-        margin: 0 auto;
+    margin: 0 auto;
     font-size: 35px;
     line-height: 1.50;
     justify-content: center;
@@ -254,7 +254,7 @@ font-size: 30px;
 .team{
     padding-top: 80px;
     min-height: 800px;
-    background-color: var(--second-color);
+    background-color: var(--white);
 }
 .team-section{
     font-size: 40px;
@@ -270,31 +270,67 @@ font-size: 30px;
 }
 .team-box{
     display: block;
-    justify-content: center;
-    align-items: center;
-    
 }
-.name{
+
+.btn-doctor-selected{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 25px;
+    height: 480px;
+    background-color: var(--second-color);
+}
+
+
+.doctor-selected{
+    width: 15px;
+    margin: 0 auto;
+    border: none;
+    justify-content: space-around;
+    height: 60px;
+    background-color: var(--second-color);
+}
+.doctor-selected:hover,
+.doctor-selected:focus{
+background-color: var(--prime-color);
+border-radius: 6px;
+}
+
+
+.doctor-name{
     width: 175px;
     height: 145px;
     margin-top: 15px;
-    justify-items: center;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
     font-size: 25px;
-    line-height: 1.50;
+    line-height: 1.0;
     margin-left: 15px;
 }
+.doctor-work-experience{
+    font-size: 18px;
+    line-height: 1.0;
+}
 .team-img{
-    margin-left: 155px;
+    margin-left: 5px;
     margin-top: 15px;
     display:block;
     width: 175px;
     height: 145px;
     
-    border: 4px solid #145672;
+    border: 4px solid #dbdbdb;
     border-radius: 35px;
     overflow: hidden;
 }
-
+.team-img:hover,
+.team-img:focus{
+    border-color: var(--prime-color);
+}
 .doctor1, .doctor2, .doctor3{
     width:100%;
     height: auto;
@@ -303,10 +339,24 @@ font-size: 30px;
     background-position: center;
     background-repeat: no-repeat; */
 }
+.doctor-about{
+    width: 700px;
+    height: auto;
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.doctor-photo{
+    width: 400px;
+    height: 350px;
 
-.team-img::after{
-    width: 15px;
-    height: 15px;
     border: 4px solid #145672;
-    color: #000;
+    border-radius: 35px;
+    overflow: hidden;
+
+}
+.doctor-about-text{
+    width: 400px;
 }
