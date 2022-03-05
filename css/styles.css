@@ -15,7 +15,7 @@ font-family: 'League Spartan';
     margin: 0 auto;
 }
 
-li{
+li, a {
     text-decoration: none;
     list-style: none;
 }
@@ -30,6 +30,7 @@ h2, p, ul{
     padding-left: 45px;
     padding-top: 14px;
     padding-bottom: 14px;
+    margin-right: 15px;
     display: flex;
     
     justify-content: center;
@@ -50,7 +51,7 @@ h2, p, ul{
     left: -1px;
     box-shadow: 10px 10px 8px 2px rgba(19, 102, 150, 0.3);
 }
-.header-box, .footer-box{
+.header-box{
     color: var(--prime-color);
     display: flex;
     flex-wrap: wrap;
@@ -452,25 +453,52 @@ label {
 footer{
     width: 100%;
     height: 85px;
-    padding: ;
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    margin: 0 auto;
+    /* justify-content: space-between; */
     background-color: var(--second-color);
+    color: var(--prime-color);
 }
 
-.footer-social-link{
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.footer-box-link::before{
-    margin-right: 16px;
-    background-image: url("../img/iconPhone.png");
+.footer-box{
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 1.1;
+    }
+
+.footer-box-list:not(:last-child){
+    margin-right: 65px;
     
+    }
 
+.footer-social-link, 
+.footer-icon{
+    display: flex;
+    text-decoration: none;
+    color: var(--prime-color);
+    justify-content: right;
+    align-items: center;
+    
+}
+
+.footer-icon::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/iconPhone.png);
+    
+} 
+
+.footer-icon:nth-child(2)::before{
+    background-image: url(../img/iconInstagram.png);
 }
