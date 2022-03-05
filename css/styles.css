@@ -3,7 +3,7 @@
 --second-color: #DDF4FF;
 --text: #000000;
 --white: #FFFFFF; 
-
+--grey: #bbbaba;
 }
 body {
 font-family: 'League Spartan';
@@ -11,16 +11,15 @@ font-family: 'League Spartan';
 }
 
 .container{
-    /* width:1440px; */
     padding:0 10px;
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 li{
     text-decoration: none;
     list-style: none;
-
 }
+
 h2, p, ul{
     margin: 0;
 }
@@ -51,7 +50,7 @@ h2, p, ul{
     left: -1px;
     box-shadow: 10px 10px 8px 2px rgba(19, 102, 150, 0.3);
 }
-.header-box{
+.header-box, .footer-box{
     color: var(--prime-color);
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +85,8 @@ h2, p, ul{
     color: var(--white);
 
 }
-.header-text{
+.header-text,
+.footer-text{
     list-style: none;
     text-decoration: none;
     color: var(--prime-color);
@@ -370,7 +370,6 @@ border-radius: 6px;
 
 }
 .doctor-text{
-    
     width: 400px;
     margin: 0 auto;
     margin-top: 10px;
@@ -393,29 +392,46 @@ border-radius: 6px;
     background-position: right;
     background-repeat: no-repeat;
 }
+.contacts-section{
+    padding: 15px;
+    color: var(--prime-color);
+    font-size: 30px;
+    line-height: 1.0;
+    text-align: center;
+}
 form{
     width: 600px;
+    padding: 20px;
     margin-left: 65px;
     font-size: 25px;
     line-height: 1.0;
+    background-color: var(--second-color);
+    border-radius: 10px;
 }
 input, select {
     padding: 7px;
-border-radius: 4px;
-/* border-color: var(--prime-color); */
-border: 2px solid var(--prime-color);
-}
+    border-radius: 4px;
+    border: 2px solid var(--prime-color);
+    }
 
 label {
     display: flex;
     flex-direction: column;
     margin-bottom: 18px;
+    color: var(--grey);
+    font-size: 25px;
+    line-height: 1.0;
 }
+.label-select{
+    margin-bottom: 0;
+}
+
 .form-btn{
-    /* margin-top: 40px; */
+    margin-left: 65px;
+    margin-top: 30px;
     background-color: var(--prime-color);
     color: var(--second-color);
-    width: 205px;
+    width: 218px;
     height: 45px;
     font-weight: 600;
     text-transform: uppercase;
@@ -430,4 +446,31 @@ label {
     background-color: var(--second-color);
     color: var(--prime-color);
     box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}
+/* footer */
+
+footer{
+    width: 100%;
+    height: 85px;
+    padding: ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--second-color);
+}
+
+.footer-social-link{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer-box-link::before{
+    margin-right: 16px;
+    background-image: url("../img/iconPhone.png");
+    
+
 }
