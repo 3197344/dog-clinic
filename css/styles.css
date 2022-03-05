@@ -106,6 +106,7 @@ h2, p, ul{
 .header-text:hover,
 .header-text:focus{
 font-size: 30px;
+color: var(--grey);
 }
 
 /* ---------------------------------hero--------------------------------- */
