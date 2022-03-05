@@ -165,25 +165,24 @@
     <h2 id="contacts" class="contacts-section">Choose a date and time for your visit</h2>
       <label>
         Username
-        <input type="text" name="username" />
+        <input type="text" name="username" required/>
       </label>
       
       <label>
         Contact tell
-        <input type="tel" name="tel" />
+        <input type="tel" name="tel" required/>
       </label>
 
       <label>
         Email
-        <input type="email" name="email" />
+        <input type="email" name="email" required/>
       </label>
       
       <label>
         Date and time
         <input type="datetime-local" 
-        
               min="2022-01-01T00:00" 
-              max="2023-01-01T00:00" />
+              max="2023-01-01T00:00" required/>
       </label>
 
       <label class="label-select" for="visit">Visit</label>
