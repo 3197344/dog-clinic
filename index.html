@@ -31,62 +31,74 @@
     <button class="header-btn" type="button">Sign up</button>
   </header>
 </div>
+
 <!-- hero -->
 <div class="container">
   <section class="hero">
-    <h2  class="hero-section">Your Dog</h2>
-    <p class="hero-text">Welcome! <br> The new clinic in Cherkassy-city waiting for you!</p>
-    <button class="hero-btn" type="button">Sign up</button>
+    <div class="hero-section" >
+      <h2 class="hero-title">Your Dog</h2>
+      <p class="hero-text">Welcome! <br> The new clinic in Cherkassy-city waiting for you!</p>
+      <button class="hero-btn" type="button">Sign up</button>
+    </div>
   </section>
 </div>
+
 <!-- about -->
 <div class="container">
     <section class="about">
-    <h2 id="about" class="about-section">Center for Veterinary Medicine</h2>
-    <p class="title">We help you. Why are we? </p>
-    <p class="text">
-      We treat little friends with care and attention. 
-      Our main goal is to keep your pet healthy for years to come. 
-      At the first examination, we will draw up an individual program for feeding, physical activity, care, professional treatment,
-      vaccinations and medical examinations for the animal for the nearest time (until the pet moves to the next age category).
-    </p>
+      <div class="about-section">
+        <h2 id="about" class="about-title">Center for Veterinary Medicine</h2>
+        <p class="title">We help you. Why are we? </p>
+        <p class="text">
+          We treat little friends with care and attention.
+          Our main goal is to keep your pet healthy for years to come.
+          At the first examination, we will draw up an individual program for feeding, physical activity, care, professional
+          treatment,
+          vaccinations and medical examinations for the animal for the nearest time (until the pet moves to the next age
+          category).
+        </p>
+      </div>
+
   </section>
 </div>
 
 <div class="container">
   <section class="price">
-    <h2 id="features" class="price-section">Clinic services</h2>
-    <p class="title left-side">What do we do and how much does it cost? </p>
-    <ul>
-
-      <li class="price-box">
-        <p class="price-text ">Therapist</p>
-        <p class="price-text-cost ">300 ₴</p>
-      </li>
-
-      <li class="price-box">
-        <p class="price-text ">Surgeon</p>
-        <p class="price-text-cost ">250 ₴</p>
-      </li>
-
-      <li class="price-box">
-        <p class="price-text">Nephrologist</p>
-        <p class="price-text-cost ">200 ₴</p>
-      </li>
-    
-
-      <li class="price-box">
-        <p class="price-text">Cardiologist</p>
-        <p class="price-text-cost ">200 ₴</p>
-      </li>
+    <div class="price-section">
+      <h2 id="features" class="price-title">Clinic services</h2>
+      <p class="title left-side">What do we do and how much does it cost? </p>
+      <ul>
       
-    
-      <li class="price-box">
-        <p class="price-text">Zoopsychologist</p>
-        <p class="price-text-cost ">220 ₴</p>
-      </li>
+        <li class="price-box">
+          <p class="price-text ">Therapist</p>
+          <p class="price-text-cost ">300 ₴</p>
+        </li>
+      
+        <li class="price-box">
+          <p class="price-text ">Surgeon</p>
+          <p class="price-text-cost ">250 ₴</p>
+        </li>
+      
+        <li class="price-box">
+          <p class="price-text">Nephrologist</p>
+          <p class="price-text-cost ">200 ₴</p>
+        </li>
+      
+      
+        <li class="price-box">
+          <p class="price-text">Cardiologist</p>
+          <p class="price-text-cost ">200 ₴</p>
+        </li>
+      
+      
+        <li class="price-box">
+          <p class="price-text">Zoopsychologist</p>
+          <p class="price-text-cost ">220 ₴</p>
+        </li>
       </ul>
 
+    </div>
+    
     </section>
 </div>
 
@@ -149,7 +161,6 @@
 <div class="container">
   <section class="contacts">
     
-    
     <form>
     <h2 id="contacts" class="team-section">Sign up</h2>
       <label>
@@ -158,16 +169,31 @@
       </label>
       
       <label>
+        Contact tell
+        <input type="text" name="username" autofocus />
+      </label>
+
+      <label>
         Email
         <input type="email" name="email" />
       </label>
       
       <label>
-          Date and time
-          <input type="datetime-local" min="1920-01-01T00:00" max="2020-01-01T00:00" />
+        Date and time
+        <input type="datetime-local" min="2022-01-01T00:00" max="2023-01-01T00:00" />
       </label>
 
-      <button type="submit">Submit</button>
+      <label for="visit">Visit</label>
+      <select id="visit" name="visit">
+        <option value="first">My first visit</option>
+        <option value="second">My second visit</option>
+        <option value="third" selected>My third visit</option>
+        <option value="regular customer">Regular customer</option>
+      </select>
+
+      
+
+      <button class="form-btn " type="submit">Submit</button>
     </form>
 
   </section>
