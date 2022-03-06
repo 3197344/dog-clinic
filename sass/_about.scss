@@ -2,9 +2,9 @@
 .about{
     height: 900px;
     padding-top: 200px;
-    padding-left: 900px;
     padding-right: 90px;
-
+    display: flex;
+    justify-content: flex-end;
     background-image: url(../img/about.png);
     background-size: cover;
     background-position: center;
