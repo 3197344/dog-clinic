@@ -1,0 +1,25 @@
+:root{
+--prime-color: #145672;
+--second-color: #DDF4FF;
+--text: #000000;
+--white: #FFFFFF; 
+--grey: #bbbaba;
+}
+body {
+font-family: 'League Spartan';
+
+}
+
+.container{
+    padding:0 10px;
+    margin: 0 auto;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+h2, p, ul{
+    margin: 0;
+}

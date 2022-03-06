@@ -1,0 +1,53 @@
+
+footer{
+    width: 100%;
+    height: 85px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+    background-color: var(--second-color);
+    color: var(--prime-color);
+}
+
+.footer-box{
+    padding: 20px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 1.1;
+    }
+
+.footer-box-list:not(:last-child){
+    margin-right: 85px;
+    
+    }
+
+.footer-social-link, 
+.footer-icon{
+    display: flex;
+    text-decoration: none;
+    color: var(--prime-color);
+    justify-content: right;
+    align-items: center;
+    
+}
+
+.footer-icon::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/iconPhone.png);
+    
+} 
+
+.footer-icon:nth-child(2)::before{
+    background-image: url(../img/iconInstagram.png);
+}
