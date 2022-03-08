@@ -16,25 +16,38 @@
 </head>
 <body>
 <!-- header -->
-<div class="container">
-  <header class="header">
-    <div class="logo"><img src="./img/logo.png" alt="logo"></div>
-    
-    <nav >
-      <ul class="header-box">
-        <li class="header-box-list"><a class="header-text" href="#about">About us</a></li>
-        <li class="header-box-list"><a class="header-text" href="#features">Services</a></li>
-        <li class="header-box-list"><a class="header-text" href="#team">Team</a></li>
-        <li class="header-box-list"><a class="header-text" href="#contacts">Contacts</a></li>
-      </ul>
-    </nav>
 
-    <button class="header-btn" type="button">Sign up</button>
+  <header class="header page-header">
+    <div class="container">
+      <div class="logo"><img src="./img/logo.png" alt="logo"></div>
+      <nav>
+
+<!-- button open-menu -->
+          <button class="menu-toggle js-open-menu" 
+          aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="30" height="30" fill="currentColor" viewBox="0 0 20 20" 
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+
+<!-- header menu -->
+        <ul class="header-box">
+          <li class="header-box-list"><a class="header-text" href="#about">About us</a></li>
+          <li class="header-box-list"><a class="header-text" href="#features">Services</a></li>
+          <li class="header-box-list"><a class="header-text" href="#team">Team</a></li>
+          <li class="header-box-list"><a class="header-text" href="#contacts">Contacts</a></li>
+        <li> <button class="header-btn" type="button">Sign up</button> </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-</div>
+
 
 <!-- hero -->
-<div class="container">
+<!-- <div class="container">
   <section class="hero">
     <div class="hero-section" >
       <h2 class="hero-title">Your Dog</h2>
@@ -43,10 +56,10 @@
     </div>
     
   </section>
-</div>
+</div> -->
 
 <!-- about -->
-<div class="container">
+<!-- <div class="container">
     <section class="about">
       <div class="about-section">
         <h2 id="about" class="about-title">Center for Veterinary Medicine</h2>
@@ -62,9 +75,9 @@
       </div>
 
   </section>
-</div>
+</div> -->
 <!-- price -->
-<div class="container">
+<!-- <div class="container">
   <section class="price">
     <div class="price-section">
       <h2 id="features" class="price-title">Clinic services</h2>
@@ -102,9 +115,9 @@
     </div>
     
     </section>
-</div>
+</div> -->
 <!-- team -->
-<div class="container">
+<!-- <div class="container">
   <section class="team">
     <h2 id="team" class="team-section">Our team</h2>
     <p class="title left-side">We are always happy to help you! </p>
@@ -158,9 +171,9 @@
       </div>
     </div>
   </section> 
-</div>
+</div> -->
 <!-- contacts -->
-<div class="container">
+<!-- <div class="container">
   <section class="contacts">
     
     <form>
@@ -197,10 +210,12 @@
     </form>
     <button class="form-btn" type="submit">Submit</button>
   </section>
-</div>
+</div> -->
 
-  <div class="container">
-  <footer>
+
+
+  <!-- <div class="container">
+    <footer>
     
       <div class="logo"><img src="./img/logo.png" alt="logo"></div>
       
@@ -223,12 +238,31 @@
             
           </ul>
 
-
-
-      </ul>
-    
-  </footer>
-  </div>
-
+    </footer>
+  </div> -->
+  
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg fill="currentColor" viewBox="0 0 20 20" 
+          xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      
+          <ul class="mobile-menu">
+            <li><a class="header-text link" href="#about">About us</a></li>
+            <li><a class="header-text link" href="#features">Services</a></li>
+            <li><a class="header-text link" href="#team">Team</a></li>
+            <li><a class="header-text link" href="#contacts">Contacts</a></li>
+            <li><a class="header-text link" href="">Sign up</a></li>
+          </ul>
+      </div>
+      
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+      <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

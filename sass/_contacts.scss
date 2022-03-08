@@ -4,7 +4,7 @@
 
     background-image: url(../img/image2.jpg);
     background-size: cover;
-    background-position: right;
+    // background-position: right;
     background-repeat: no-repeat;
 }
 .contacts-section{
@@ -24,6 +24,7 @@ form{
     border-radius: 10px;
 }
 input, select {
+    margin-top: 5px;
     padding: 7px;
     border-radius: 4px;
     border: 2px solid var(--prime-color);
