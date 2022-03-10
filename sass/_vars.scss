@@ -18,12 +18,12 @@ font-family: 'League Spartan';
         width:320px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        // 
     }
 
     @media screen and (min-width:768px) {
         width:768px;
-        
+       
     }
     @media screen and (min-width: 1200px) {
         width: 1200px;
@@ -31,6 +31,15 @@ font-family: 'League Spartan';
     @media screen and (min-width: 1600px) {
         width: 1600px;
     }
+}
+.container-space-between{
+justify-content: space-between;
+}
+.container-center{
+justify-content: center;
+}
+.container-flex-end{
+justify-content: flex-end;
 }
 
 li, a {

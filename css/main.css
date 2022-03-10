@@ -24,9 +24,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -46,6 +43,24 @@ body {
   .container {
     width: 1600px;
   }
+}
+
+.container-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 li, a {
@@ -318,17 +333,6 @@ summary {
 .header {
   width: 100%;
   height: 85px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: var(--second-color);
   position: fixed;
   top: 0px;
@@ -399,7 +403,7 @@ summary {
 
 @media screen and (min-width: 768px) {
   .header-box-list {
-    margin-right: 35px;
+    margin-right: 25px;
   }
 }
 
@@ -434,9 +438,9 @@ summary {
 
 @media screen and (min-width: 768px) {
   .header-btn {
-    width: 105px;
+    width: 95px;
     height: 40px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1;
   }
 }
@@ -575,9 +579,8 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .link {
@@ -599,7 +602,6 @@ summary {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(../img/hero768.jpg);
-    height: 800px;
   }
 }
 
@@ -626,16 +628,14 @@ summary {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    width: 400px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 295px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    width: 605px;
+    width: 405px;
+    margin-top: 45px;
   }
 }
 
@@ -684,7 +684,7 @@ summary {
 
 @media screen and (min-width: 768px) {
   .hero-btn {
-    width: 305px;
+    width: 245px;
     height: 45px;
   }
 }
@@ -692,7 +692,7 @@ summary {
 @media screen and (min-width: 1200px) {
   .hero-btn {
     width: 305px;
-    height: 45px;
+    height: 55px;
   }
 }
 
@@ -716,7 +716,6 @@ summary {
   .hero-text {
     margin-top: 15px;
     font-size: 30px;
-    line-height: 1.5;
   }
 }
 
@@ -724,6 +723,112 @@ summary {
   .hero-text {
     margin-top: 15px;
     font-size: 40px;
+  }
+}
+
+.about {
+  height: 600px;
+  background-image: url(../img/about320.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--second-color);
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    background-image: url(../img/about768.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    background-image: url(../img/about.jpg);
+    height: 900px;
+  }
+}
+
+.about-section {
+  width: 100%;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    margin-top: 25px;
+    width: 430px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-section {
+    width: 620px;
+    margin-top: 65px;
+  }
+}
+
+.about-title {
+  text-align: center;
+  color: var(--prime-color);
+}
+
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-title {
+    font-size: 45px;
+    line-height: 1.5;
+  }
+}
+
+.title {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  text-align: center;
+  color: var(--text);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    margin-top: 25px;
+    font-size: 30px;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+}
+
+.text {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--text);
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text {
+    font-size: 35px;
     line-height: 1.5;
   }
 }
