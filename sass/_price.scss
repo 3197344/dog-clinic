@@ -1,59 +1,113 @@
 
 .price{
-    padding-top: 80px;
-    min-height: 800px;
-    background-image: url(../img/price2.jpg);
+    height: 700px;
+    background-image: url(../img/price320.jpg);
     background-size: contain;
-    background-position: right;
+    background-position:center ;
     background-repeat: no-repeat;
     background-color: var(--white);
+    
+    @media screen and (min-width:768px){
+    background-image: url(../img/price2.jpg);
+    height: 600px;
+    background-position:right;
+    }
+    @media screen and (min-width:1200px) {
+    height: 800px;
+    padding-top: 50px;
+        
+    }
 }
 
-.left-side{
-    margin-bottom: 20px;
-    padding-left: 80px;
-    text-align: left;
-}
+
 .price-section{
-width: 700px;
+    width: 100%;
+    margin-top: 15px;
+    @media screen and (min-width:1200px){
+    width: 700px;
+    }
+
 }
 .price-title{
+    
+    text-align: center;
+    color: var(--prime-color);
+    @media screen and (min-width:768px){
+    font-size: 30px;
+    line-height: 1.3;
+    }
+    @media screen and (min-width:1200px){
     font-size: 40px;
     line-height: 1.50;
-    padding-left: 80px;
+    
     text-align: left;
-    color: var(--prime-color);
+    }
+
 }
 
 .price-box{
-    margin-left: 25px;
-    margin-bottom: 20px;
-    
-    height: 80px;
+
+    margin-top: 15px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 4px solid #145672;
+    border: 2px solid #145672;
     border-radius: 16px;
-}
-.price-text-cost{
-    width: 200px;
-    display: flex;
-    margin: 0 auto;
-    font-size: 35px;
-    line-height: 1.50;
-    justify-content: center;
-    align-items: center;
-    color: var(--text);
+    @media screen and (min-width:768px){
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 55px;
+    width: 260px;
+    }
+    @media screen and (min-width:1200px){
+    margin-left: 0;
+    margin-bottom: 20px;
+    height: 80px;
+    width: 450px;
+    border: 4px solid #145672;
+    }
 }
 .price-text{
     display: flex;
-    width: 500px;
     padding-left: 15px;
-    margin: 0 auto;
-    
-    font-size: 35px;
-    line-height: 1.50;
+    font-size: 25px;
+    line-height: 1;
     align-items: center;
     color: var(--text);
+
+    @media screen and (min-width:768px){
+    font-size: 25px;
+    line-height: 1.30;
+    }
+    @media screen and (min-width:1200px){
+    width: 500px;
+    font-size: 35px;
+    line-height: 1.50;
+    }
 }
+
+.price-text-cost{
+    width: 70px;
+    display: flex;
+    
+    font-size: 25px;
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+
+    @media screen and (min-width:768px){
+    font-size: 25px;
+    line-height: 1.30;
+    width: 70px;
+    }
+    @media screen and (min-width:1200px){
+    font-size: 35px;
+    line-height: 1.50;
+    width: 185px;
+    
+
+    }
+}
+

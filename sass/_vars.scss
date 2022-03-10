@@ -46,8 +46,51 @@ li, a {
     text-decoration: none;
     list-style: none;
 }
+.left-side{
+    margin-bottom: 20px;
+    padding-left: 80px;
+    text-align: left;
+}
 
 h2, p, ul{
     margin: 0;
     padding: 0;
+}
+.title{
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1;
+    text-align: center;
+    color: var(--text);
+    
+    @media screen and (min-width:768px){
+    margin-top: 25px;
+    font-size: 30px;
+    line-height: 1.3;
+    }
+    @media screen and (min-width:1200px) {
+    font-size: 35px;
+    line-height: 1.5;
+    
+    }
+}
+.text{
+    margin-top: 15px;
+
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--text);
+
+    @media screen and (min-width:768px){
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 1.3;
+    }
+    @media screen and (min-width:1200px) {
+    font-size: 35px;
+    line-height: 1.5;
+    
+    }
 }
